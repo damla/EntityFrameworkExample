@@ -10,7 +10,7 @@ namespace EF_Example.Controllers
     {
         public string Index()
         {
-            return "This is Home controller's Index action!";
+            return "This home page!";
         }
     }
 }
