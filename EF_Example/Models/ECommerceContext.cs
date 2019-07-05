@@ -9,6 +9,7 @@ namespace EF_Example.Models
 {
     public class ECommerceContext: DbContext
     {
+        public ECommerceContext(DbContextOptions<ECommerceContext> options) : base(options) { }
         public DbSet<User> Users { get; set; }
     }
 }
