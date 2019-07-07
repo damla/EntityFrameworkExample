@@ -1,0 +1,7 @@
+﻿@model EF_Example.Models.UserListViewModel
+
+@foreach (var user in Model.Users)
+{
+    <br/>
+    @user.FirstName
+}

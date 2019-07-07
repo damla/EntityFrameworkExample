@@ -14,7 +14,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" asp-action="index">Users <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item">   
                     <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -31,6 +31,9 @@
             </ul> 
         </div>
     </nav>
+    <div>
+        @await Component.InvokeAsync("UserList", new { filter= "a"})
+    </div>
     <div>
         @RenderBody()
     </div>
